@@ -1,0 +1,226 @@
+html {
+    background-color: lightgrey;
+}
+body {
+    margin: 0;
+}
+/* =========================================================================================
+NAVIGATION
+========================================================================================= */
+div.navigation {
+    height: 9vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(57, 57, 74); 
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.navigation img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+.navigation a {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+/* =========================================================================================
+LANDING
+========================================================================================= */
+div.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url("snowy_wallpaper.jpg");
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1 {
+    color: rgb(57, 57, 74);
+    font-size: 80px;
+    text-shadow: 0 0 1px white;
+    text-align: left;
+    
+}
+.landing h2 {
+    color: rgb(57, 57, 74);
+    font-size: 40px;
+    text-shadow: 0 0 1px white;
+    text-align: center;
+}
+/* =========================================================================================
+SERVICES
+========================================================================================= */
+div.services { /*Container for vertDivide Divs*/
+    background-color: lightgrey/*rgb(232, 232, 232)*/;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+/*Service boxes were originally in a 2x2 grid using flexbox row. Adding vertDivide 
+and having two flexbox columns side by side allows the overlap between the start 
+of the left box and end of the right.*/
+div.vertDivide { /*Container for Service boxes*/
+    height:auto;
+    width:50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.service { /*Service boxes*/
+    background-color: white;
+    width: 45vw;
+    border-radius: 5px;
+    min-height: 80vh; 
+    height: auto;
+    margin-bottom: 20vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.service img {
+    height: 45vh;
+    width: 100%;
+}
+.service button {
+    margin-bottom: 1vh;
+    color: white;
+    background-color: rgb(57, 57, 74);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+/* =========================================================================================
+CONTACT
+========================================================================================= */
+div.contact {
+    height:50vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: white;
+    color: rgb(57, 57, 74);
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.contact h2 {
+    font-size: 25px;
+    margin: 0;
+}
+.contact button {
+    color: white;
+    background-color: rgb(57, 57, 74);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 0;
+}
+div.contactOptions {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+}
+.contact a {
+    font-size: 16px;
+}
+.contact div.vertLine {
+    height: 3.5vh;
+    width: 2px;
+    background-color: rgb(57, 57, 74);
+}
+/* =========================================================================================
+GALLERY
+========================================================================================= */
+div.gallery {
+    background-color: lightgrey/*rgb(232, 232, 232)*/;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div.box {
+    width: 15vw; /*Probs not the best responsive solution when it comes to images because they'll get distorted*/
+    height: 90vh;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.box img {
+    width: 15vw;
+    height:59.98828vh;
+}
+/* =========================================================================================
+FOOTER
+========================================================================================= */
+div.footer {
+    height: 10vh;
+    width: 100%;
+    background-color:rgb(57, 57, 74);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+}
+div.elementContainer {
+    width: 33.333333%;
+    display:flex;
+    flex-flow: row nowrap;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+.footer p {
+    color: black;
+    font-size: 12.5px;
+    margin: 0;
+}
+.footer div.footerContact { /*flex container for Nav Bar*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.footerContact a {
+    color:white;
+    font-size: 12.5px;
+}
+.footerContact div.vertLine {
+    height: 4vh;
+    width: 2px;
+    background-color: white;
+    margin: 0 1vw;
+}
+    

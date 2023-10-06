@@ -1,0 +1,79 @@
+html {
+    background-color: lightgrey;
+}
+body {
+    margin: 0;
+}
+/* =========================================================================================
+NAVIGATION
+========================================================================================= */
+div.navigation {
+    height: 9vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(57, 57, 74); 
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.navigation img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+.navigation a {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* =========================================================================================
+FOOTER
+========================================================================================= */
+div.footer {
+    height: 10vh;
+    width: 100%;
+    background-color:rgb(57, 57, 74);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+}
+div.elementContainer {
+    width: 33.333333%;
+    display:flex;
+    flex-flow: row nowrap;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+.footer p {
+    color: black;
+    font-size: 12.5px;
+    margin: 0;
+}
+.footer div.footerContact { /*flex container for Nav Bar*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.footerContact a {
+    color:white;
+    font-size: 12.5px;
+}
+.footerContact div.vertLine {
+    height: 4vh;
+    width: 2px;
+    background-color: white;
+    margin: 0 1vw;
+}

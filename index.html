@@ -1,0 +1,185 @@
+<!-- TO DO
+-Finalise Homepage Content. Images, text, Links.
+-Improve Homepage Contact Section with Contact Icons
+-Create the rest of the pages
+-Add About section into Homepage
+-Add Review sectio into homepage
+-->
+<!-- DONE
+-Complete Homepage Layout
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Maxim Paint and Spray</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- ==========================================================================
+NAVIGATION
+=========================================================================== -->
+<div class="navigation">
+  <img src="logo.png" alt="logo">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a> <!-- Drop down Menu: Interior Room Painting and Spraying, ExteriorRender Spraying and Rolling-->
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+<!-- ==========================================================================
+LANDING
+=========================================================================== --> 
+<div class="landing">
+  <h1>Care and Excellence</h1>
+  <h2>Painting and Spraying Services in Marple and the surrounding areas</h2>
+</div>
+<!-- ==========================================================================
+SERVICES
+=========================================================================== --> 
+<div class="services">
+
+  <div class="vertDivide">  <!-- LEFT SIDE -->
+
+    <div class="service"> <!-- 1st box -->
+      <img src="service_2.jpg">
+      <h1>Interior</h1>
+      <p>Add new life to your home.
+        <ul>
+          <li>Bedrooms</li>
+          <li>Hall Stairs Landing</li>
+          <li>Kitchens</li>
+          <li>Emulsions</li>
+          <li>Woodwork</li>
+          <li>Patterned Paper Feature Walls</li>
+        </ul>
+      </p>
+      <a href="services.html">
+        <button>More</button>
+      </a>
+    </div>
+    
+
+    <div class="service" style="margin-bottom:2vh;"> <!-- 3rd box -->
+      <img src="service_1.jpg">
+      <h1>Spraying</h1>
+      <p>We Spray! Using the best in HVLP and Airless spray systems, we offer a top quality, durable and superb finish in all our spray packages. 
+        <ul>
+          <li>Interior Rooms</li>
+          <li>Woodwork</li>
+          <li>Fencing, sheds, garden furniture</li>
+          <li>UPVC spraying</li>
+          <li>Exterior rendering</li>
+          <li>Exterior Windows and Masonry</li>
+        </ul>
+      </p>
+      <a href="services.html">
+        <button>More</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="vertDivide" style="padding-top: 40vh;"> <!-- RIGHT SIDE -->
+
+    <div class="service"> <!-- 2nd box -->
+      <img src="sevice_3.jpg">
+      <h1>Exterior</h1>
+      <p> Refresh and transform your property appearance and repair and maintain.
+        <ul>
+          <li>Windows, Doors and Surrounds</li>
+          <li>Wood Repair and Maintenance</li>
+          <li>Renders</li>
+          <li>Masonry</li>
+        </ul>
+      </p>
+      <a href="services.html">
+        <button>More</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ==========================================================================
+CONTACT
+=========================================================================== -->
+<div class="contact">
+  <h1>Let's get the ball rolling</h1>
+  <h2>Get a free, no-obligation quote</h2>
+  <a href="contact.html">
+    <button>Contact</button>
+  </a>
+  <div class="contactOptions">
+    <a>Email</a>
+    <div class="vertLine"></div>
+    <a>Phone</a>
+    <div class="vertLine"></div>
+    <a>Facebook</a>
+  </div>
+</div> 
+<!-- ==========================================================================
+GALLERY
+=========================================================================== -->
+<div class="gallery">
+  <div class="box"> <!-- 1 -->
+    <img src="box_1.jpeg" alt="galleryImage">
+    <h1>Title</h1>
+    <p>Text</p>
+  </div>
+  <div class="box"> <!-- 2 --> 
+    <img src="box_2.jpeg" alt="galleryImage">
+    <h1>Title</h1>
+    <p>Text</p>
+  </div>
+  <div class="box"> <!-- 3 --> 
+    <img src="box_3.jpeg" alt="galleryImage">
+    <h1>Title</h1>
+    <p>Text</p>
+  </div>
+  <div class="box"> <!-- 4 --> 
+    <img src="box_4.jpeg" alt="galleryImage">
+    <h1>Title</h1>
+    <p>Text</p>
+  </div>
+  <div class="box"> <!-- 5 --> 
+    <img src="box_5.jpeg" alt="galleryImage">
+    <h1>Title</h1>
+    <p>Text</p>
+  </div>
+</div>
+<!-- ==========================================================================
+FOOTER
+=========================================================================== -->
+<!--FlexContainer[elementContainer{p}, elementContainer{img}, elementContainer{DIV}]
+Each element container taking up an equal 33% width so you can space the logo directly 
+in the centre of the webpage-->
+<!--Add review link to Fb reviews-->
+
+<div class="footer">
+  <div class="elementContainer">
+    <div class="footerContact">
+      <a>Home</a>
+      <div class="vertLine"></div>
+      <a>Services</a>
+      <div class="vertLine"></div>
+      <a>About</a>
+      <div class="vertLine"></div>
+      <a>Gallery</a>
+      <div class="vertLine"></div>
+      <a>Contact</a>
+    </div>
+  </div>
+  <div class="elementContainer">    
+    <img src="logo.png" alt="logo">
+  </div>
+  <div class="elementContainer">
+    <p>Site by Jonathan Maxim</p>
+  </div>  
+  
+</div>
+
+</body>
+</html>
